@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<environment_description cut="201503040913-441466" name="White Room (1)" align="o" editable="1" modified="1" link_Rotation="0" version="2014.04" unit="1" image="WhiteRoom (1).png" backplate="0">
+	<shadows>
+	</shadows>
+	<material_assignments>
+		<material_assignment visible="" material="Dome[1]" target="room:-L-0">
+		</material_assignment>
+		<material_assignment visible="" material="Ground[1]" target="room:-L-1">
+		</material_assignment>
+	</material_assignments>
+	<models>
+		<light use_node_pivot="1" type="directional" transformation="0.987289029579 -0.158326467827 0.0138961022608 -0.158326467827 -0.972097297426 0.173088341384 -0.0138961022608 -0.173088341384 -0.984808267847 -18.7221793814 -233.201434143 -1326.82940158" original_transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0" name="__EnvironmentMainLight__">
+			<parameter type="double" name="RTambientTraceDistance" value="1000.0">
+			</parameter>
+			<parameter type="double" name="RayTracingLightSize" value="9.92537313433">
+			</parameter>
+			<parameter type="string" name="castsShadows" value="true">
+			</parameter>
+			<parameter type="string" name="explicitLightType" value="directional">
+			</parameter>
+			<parameter type="double4" name="lightColor" value="1.82384477612 1.82384477612 1.82384477612 2.1821">
+			</parameter>
+			<parameter type="double4" name="lightDirection" value="-0.0138961 -0.173088 -0.984808 1">
+			</parameter>
+			<parameter type="double4" name="lightPosition" value="-37.621 -468.603 -1318.88 1">
+			</parameter>
+			<default>
+				<parameter type="double" name="RTambientTraceDistance" value="50.0">
+				</parameter>
+				<parameter type="double" name="RayTracingLightSize" value="3.0">
+				</parameter>
+				<parameter type="double4" name="lightColor" value="0.55 0.55 0.55 0.55">
+				</parameter>
+				<parameter type="double4" name="lightDirection" value="-0.612372 -0.353553 0.707107 1">
+				</parameter>
+				<parameter type="double4" name="lightPosition" value="-796.246 -459.713 919.425 1">
+				</parameter>
+			</default>
+		</light>
+	</models>
+	<models>
+		<import src="Environments\WhiteRoom\WhiteRoom.apf" name="room" original_apf_unit="cm" collapse_leaf_xforms="0" original_timestamp="0.0" original_transform="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0" original_unit="cm" transformation="10.0 0.0 0.0 0.0 10.0 0.0 0.0 0.0 10.0 0.0 0.0 0.0" unit="cm">
+			<child node="room:fileroot">
+			</child>
+		</import>
+		<group name="room:fileroot">
+			<child node="room:WhiteRoom">
+			</child>
+		</group>
+		<group name="room:WhiteRoom">
+			<child node="room:Dome">
+			</child>
+			<child node="room:Ground">
+			</child>
+			<child node="room:Light">
+			</child>
+		</group>
+		<group name="room:Dome">
+			<child node="room:DomeShape">
+			</child>
+		</group>
+		<group name="room:DomeShape">
+			<child node="room:-L-0">
+			</child>
+		</group>
+		<lod_group priority="1" name="room:-L-0" has_spline="0">
+		</lod_group>
+		<group name="room:Ground">
+			<child node="room:GroundShape">
+			</child>
+		</group>
+		<group name="room:GroundShape">
+			<child node="room:-L-1">
+			</child>
+		</group>
+		<lod_group priority="1" name="room:-L-1" has_spline="0">
+		</lod_group>
+		<group name="room:Light">
+			<child node="room:LightShape">
+			</child>
+		</group>
+		<group name="room:LightShape">
+			<child node="room:-L-2">
+			</child>
+		</group>
+		<lod_group priority="1" name="room:-L-2" has_spline="0">
+		</lod_group>
+	</models>
+	<materials>
+		<material type="Unlit_DT" ids="room" name="Dome[1]" label="Dome">
+			<parameter type="affineMatrix" name="diffuseProjMatrix" value="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -0.0 -0.0 -672.079234919">
+			</parameter>
+			<parameter type="string" name="diffuseProjection" value="none">
+			</parameter>
+			<parameter type="string" name="diffuseSource" value="texture">
+			</parameter>
+			<parameter type="string" name="diffuseTexture" value="Environments\WhiteRoom\env-WhiteRoom.hdr">
+			</parameter>
+			<parameter type="double" name="diffuseTextureGainValue" value="1.33792755479">
+			</parameter>
+			<parameter type="string" name="diffuseToneMap" value="value">
+			</parameter>
+			<parameter type="affineMatrix" name="diffuseUVMatrix" value="1.0 0.0 0.0 0.0 1.8 0.0 0.0 0.0 1.0 0.0 0.169 0.0">
+			</parameter>
+			<parameter type="string" name="iblTone" value="global">
+			</parameter>
+			<parameter type="string" name="magFilter" value="Linear">
+			</parameter>
+			<parameter type="string" name="minFilter" value="Linear">
+			</parameter>
+			<parameter type="string" name="sided" value="single">
+			</parameter>
+		</material>
+		<material type="Unlit_DT" ids="room" name="Ground[1]" label="Ground">
+			<parameter type="affineMatrix" name="diffuseProjMatrix" value="1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 -0.0 -0.0 -672.079234919">
+			</parameter>
+			<parameter type="string" name="diffuseProjection" value="none">
+			</parameter>
+			<parameter type="string" name="diffuseSource" value="texture">
+			</parameter>
+			<parameter type="string" name="diffuseTexture" value="Environments\WhiteRoom\env-WhiteRoom.hdr">
+			</parameter>
+			<parameter type="double" name="diffuseTextureGainValue" value="1.33792755479">
+			</parameter>
+			<parameter type="string" name="diffuseToneMap" value="value">
+			</parameter>
+			<parameter type="affineMatrix" name="diffuseUVMatrix" value="1.0 0.0 0.0 0.0 1.8 0.0 0.0 0.0 1.0 0.0 0.169 0.0">
+			</parameter>
+			<parameter type="string" name="iblTone" value="global">
+			</parameter>
+			<parameter type="string" name="magFilter" value="Linear">
+			</parameter>
+			<parameter type="string" name="minFilter" value="Linear">
+			</parameter>
+			<parameter type="string" name="sided" value="single">
+			</parameter>
+		</material>
+	</materials>
+	<lighting type="hdr" name="Common">
+		<image src="Environments\Common\Common.hdr" name="backdrop">
+		</image>
+		<exposure value="10.2">
+		</exposure>
+		<parameter type="string" name="preview" value="lighting_preview.tif">
+		</parameter>
+		<parameter type="double" name="globalIBLGainValue" value="0.1535">
+		</parameter>
+		<parameter type="affineMatrix" name="globalIBLMatrix" value="-1.0 -1.22464679915e-16 -0.0 1.22464679915e-16 -1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0">
+		</parameter>
+		<parameter type="double" name="RayTracingReflectIBLMaps" value="1.0">
+		</parameter>
+		<parameter type="double" name="isBackdropOverride" value="1">
+		</parameter>
+	</lighting>
+</environment_description>
